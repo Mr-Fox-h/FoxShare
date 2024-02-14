@@ -1,9 +1,26 @@
 /** @type {import('tailwindcss').Config} */
-export default {
-  content: ['./src/**/*.{html,js,svelte,ts}'],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
+const defaultTheme = require('tailwindcss/defaultTheme');
 
+export default {
+	content: ['./src/**/*.{html,js,svelte,ts}'],
+	theme: {
+		extend: {
+			colors: {
+				background: 'var(--background)',
+				primary: {
+					20: 'var(--primary-20)',
+					40: 'var(--primary-40)',
+					60: 'var(--primary-60)',
+					80: 'var(--primary-80)',
+					100: 'var(--primary-100)'
+				},
+				etc: {
+					1: 'var(--etc-1)',
+					2: 'var(--etc-2)',
+					3: 'var(--etc-3)'
+				}
+			}
+		}
+	},
+	plugins: []
+};
