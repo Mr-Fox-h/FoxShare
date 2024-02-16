@@ -19,6 +19,9 @@ export default {
 					2: 'var(--etc-2)',
 					3: 'var(--etc-3)'
 				}
+			},
+			cursor: {
+				mynormal: 'var(--mycursor-1), auto'
 			}
 		}
 	},
