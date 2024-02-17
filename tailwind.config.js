@@ -4,6 +4,9 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 export default {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	theme: {
+		fontFamily: {
+			Inter: ['Inter', 'sans-serif']
+		},
 		extend: {
 			colors: {
 				background: 'var(--background)',
