@@ -9,7 +9,7 @@
 	const toggleFunc = () => (toggle = !toggle);
 </script>
 
-<section class="bg-background text-etc-3 size-full flex items-center justify-center">
+<section class="text-etc-3 size-full flex items-center justify-center">
 	<div class="h-screen max-lg:hidden relative w-3/6 px-10 py-12">
 		<div class="overflow-hidden relative h-full rounded-[50px]">
 			{#if toggle}
