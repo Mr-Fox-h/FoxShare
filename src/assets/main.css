@@ -4,6 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-button {
+button, a {
     cursor: var(--mycursor-1);
 }

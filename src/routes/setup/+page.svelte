@@ -123,10 +123,12 @@
 				></div>
 			{/if}
 			<div class="flex-grow">
-				<button
-					class="bg-primary-40 size-fit rounded-[10px] text-lg transition-all hover:bg-primary-20 my-3 py-1 px-8"
-					use:ripple>Start</button
-				>
+				<a href="/">
+					<button
+						class="bg-primary-40 size-fit rounded-[10px] text-lg transition-all hover:bg-primary-20 my-3 py-1 px-8"
+						use:ripple>Start</button
+					>
+				</a>
 			</div>
 			<div class="size-full flex flex-col items-center">
 				<hr class="w-[95%] border-primary-20 rounded-[10px] mb-4" />
