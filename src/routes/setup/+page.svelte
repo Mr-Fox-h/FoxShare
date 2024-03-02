@@ -59,7 +59,7 @@
 	</div>
 	<div class="h-screen w-screen flex items-center justify-center">
 		<div
-			class="bg-[#29282D] max-w-[570px] border-primary-20 border-[1px] rounded-[10px] flex flex-col items-center justify-start p-5 mx-2"
+			class="bg-glass-black max-w-[570px] border-primary-20 border-[1px] rounded-[10px] flex flex-col items-center justify-start p-5 mx-2"
 		>
 			<div class="w-36 flex flex-row items-center justify-between relative mb-10">
 				<button on:click={toggleFunc}>
