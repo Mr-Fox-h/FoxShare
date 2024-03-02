@@ -21,7 +21,7 @@
 				/>
 				<svg
 					transition:blur={{ duration: 500 }}
-					class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 fill-[#E3EEEE] opacity-35"
+					class="size-[90%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 fill-[#E3EEEE] opacity-35"
 					width="86"
 					height="870"
 					viewBox="0 0 86 870"
@@ -42,7 +42,7 @@
 				/>
 				<svg
 					transition:blur={{ duration: 500 }}
-					class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 fill-[#E3EEEE] opacity-35"
+					class="size-[90%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 fill-[#E3EEEE] opacity-35"
 					width="93"
 					height="870"
 					viewBox="0 0 93 870"
@@ -59,7 +59,7 @@
 	</div>
 	<div class="h-screen w-screen flex items-center justify-center">
 		<div
-			class="bg-[#29282D] max-w-[570px] border-primary-20 border-[1px] rounded-[10px] flex flex-col items-center justify-start p-5"
+			class="bg-[#29282D] max-w-[570px] border-primary-20 border-[1px] rounded-[10px] flex flex-col items-center justify-start p-5 mx-2"
 		>
 			<div class="w-36 flex flex-row items-center justify-between relative mb-10">
 				<button on:click={toggleFunc}>
