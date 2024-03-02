@@ -1,9 +1,9 @@
 <script lang="ts">
+	import Files from '@cp/Files.svelte';
 	import Nav from '@cp/Nav.svelte';
+	import Search from '@cp/Search.svelte';
 </script>
 
-<div
-	class="bg-[#2A292E] opacity-[100%] w-28 h-full flex flex-col items-center justify-center fixed right-0 px-4 overflow-hidden"
->
-	<Nav />
-</div>
+<Nav />
+<Search />
+<Files />
