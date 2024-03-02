@@ -1,3 +1,6 @@
+<script lang="ts">
+</script>
+
 <div class="w-full h-[87%] pl-[35px] py-[10px] pr-[150px]">
 	<div class="relative rounded-xl size-full overflow-hidden">
 		<div

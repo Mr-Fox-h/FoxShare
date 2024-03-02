@@ -4,6 +4,6 @@
 	import Search from '@cp/Search.svelte';
 </script>
 
-<Nav />
 <Search />
 <Files />
+<Nav />
