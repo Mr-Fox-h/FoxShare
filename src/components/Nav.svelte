@@ -68,10 +68,14 @@
 				</li>
 			</ul>
 		</div>
-		<div class="flex flex-col items-center justify-center">
+		<div class="flex flex-col items-center justify-center font-normal">
 			<Setting
 				open={openSetting}
-				items={[{ id: 1, text: 'asdasdasdsafd', lineBelow: true }]}
+				items={[
+					{ id: 1, text: 'Change The Client/Sever Data', lineBelow: true, href: '/setup' },
+					{ id: 3, text: 'What Is My IP Address', lineBelow: true },
+					{ id: 4, text: 'Exit', lineBelow: false, special: true }
+				]}
 				class="fixed bottom-5"
 			>
 				<button

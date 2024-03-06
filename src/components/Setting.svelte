@@ -4,6 +4,7 @@
 	import scaleFade from '@/animations/scale_fade';
 	import { fade, fly } from 'svelte/transition';
 	import { ripple } from 'svelte-ripple-action';
+	import { goto } from '$app/navigation';
 
 	interface Item {
 		id: number;
@@ -12,6 +13,7 @@
 		click?: () => void;
 		icon?: ComponentType;
 		lineBelow?: boolean;
+		special?: boolean;
 	}
 
 	let className = '';
@@ -51,19 +53,23 @@
 				transition:transitionFnc={params}
 				style={`margin-top: ${distanceMenu}px`}
 				on:click_outside={() => (open = false)}
-				class="sm:absolute sm:py-2 sm:w-56 sm:rounded-md fixed smMax:bottom-0 smMax:inset-x-0 z-40 overflow-hidden bg-background shadow-custom ltr:origin-top-left rtl:origin-top-right bottom-full right-0 origin-bottom-right"
+				class="sm:absolute sm:py-5 sm:w-[460px] border-primary-100 border-[1px] z-[1000] sm:rounded-xl fixed smMax:bottom-0 smMax:inset-x-0 overflow-hidden bg-background shadow-custom ltr:origin-top-left rtl:origin-top-right bottom-11 right-11 origin-bottom-right"
 			>
 				{#each items as item (item.id)}
 					<button
-						on:click={item.click}
-						class="group bg-background text-etc-3 !shadow-none w-full !justify-start !rounded-none !p-3 capitalize text-sm data-[read=true]:hover:bg-gray-500 hover:bg-gray-100 dark:hover:bg-gray-700 data-[read=true]:dark:hover:bg-gray-900"
+						on:click={item.click ? item.click : () => goto(item.href || '')}
+						data-special={item.special}
+						class="group bg-background text-etc-3 !shadow-none w-full !p-3 capitalize text-sm flex items-center justify-start"
 						use:ripple
 					>
 						<div class="w-5 h-5 mx-1">
 							<svelte:component this={item.icon} />
 						</div>
 
-						<span class="mx-1">{item.text}</span>
+						<span
+							class="mx-1 group-data-[special=true]:text-etc-1 group-data-[special=true]:text-lg"
+							>{item.text}</span
+						>
 					</button>
 
 					{#if item.lineBelow}
